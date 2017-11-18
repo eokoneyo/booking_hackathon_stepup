@@ -8,4 +8,4 @@ const coursesSchema =  Schema({
   summary: String
 });
 
-module.exports = mongoose.model('Courses', booksSchema);
+module.exports = mongoose.model('Courses', coursesSchema);
