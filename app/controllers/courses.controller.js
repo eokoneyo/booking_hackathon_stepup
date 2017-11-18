@@ -1,1 +1,1 @@
-const Course = require('')
+const Course = require('');
