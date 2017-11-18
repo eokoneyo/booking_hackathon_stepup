@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const coursesSchema =  Schema({
+const testsSchema =  Schema({
   course: {
     type: Schema.Types.ObjectId,
     ref: 'Courses'
@@ -9,4 +9,4 @@ const coursesSchema =  Schema({
   questions: Array,
 });
 
-module.exports = mongoose.model('Tests', booksSchema);
+module.exports = mongoose.model('Tests', testsSchema);
