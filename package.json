@@ -1,0 +1,27 @@
+{
+  "name": "setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_PATH=. node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maziey93/booking_hackathon_stepup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maziey93/booking_hackathon_stepup/issues"
+  },
+  "homepage": "https://github.com/maziey93/booking_hackathon_stepup#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consolidate": "^0.15.0",
+    "dustjs-helpers": "^1.7.3",
+    "dustjs-linkedin": "^2.7.5",
+    "express": "^4.16.2"
+  }
+}
