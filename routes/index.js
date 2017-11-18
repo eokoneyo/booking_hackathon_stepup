@@ -2,8 +2,10 @@
 
 module.exports = (app) => {
 
-    app.get('/hello', (req, res) => {
-        res.send('Hello World');
-    });
+    const api = require('routes/api')();
+    const frontendRoutes = require('routes/frontend')();
+
+    app.use('/api', api);
+    app.use('/', frontendRoutes)
 
 };

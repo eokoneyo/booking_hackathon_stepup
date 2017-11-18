@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_PATH=. node server.js"
+    "start": "NODE_PATH=. node server.js",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "consolidate": "^0.15.0",
     "dustjs-helpers": "^1.7.3",
     "dustjs-linkedin": "^2.7.5",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "normalize-scss": "^7.0.0",
+    "webpack": "^3.8.1"
   }
 }
