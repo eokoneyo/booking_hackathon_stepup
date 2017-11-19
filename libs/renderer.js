@@ -6,11 +6,12 @@
 
 class Renderer {
 
-    constructor(dust) {
+    constructor(dust, setDOM) {
 
         //teach client how to render templates
         if (!__SERVER__) {
             window.dust =  dust;
+            window.setDOM = setDOM;
 
             dust.onLoad = (tpl, cb) => {
                 Promise.resolve().then(() => {
@@ -45,7 +46,7 @@ class Renderer {
                 }).then(template => {
                     return cb(null, template);
                 }).catch(err => {
-                    this.logger.error('[Renderer] Error while parsing resource: ' + tpl, err);
+                    console.log('[Renderer] Error while parsing resource: ' + tpl, err);
                     return cb(err);
                 });
             };
@@ -61,7 +62,7 @@ class Renderer {
 
         //render the view for the client
         dust.render(template, data, (err, templateData) => {
-            return res.body = templateData;
+            setDOM(document, templateData);
         });
     }
 

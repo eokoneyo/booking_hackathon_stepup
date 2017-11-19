@@ -4,6 +4,7 @@ import rill from 'rill';
 import bodyParser from '@rill/body';
 import progress from '@rill/progress';
 import html from '@rill/html';
+import setDom from 'set-dom';
 import routeTransformer from 'libs/client/routeTransformer';
 
 const dust = require('dustjs-helpers');
@@ -21,7 +22,7 @@ app.use(bodyParser());
 
 
 //register only the frontend routes on the client
-require('routes/frontend')(app, new Renderer(dust));
+require('routes/frontend')(app, new Renderer(dust,setDom));
 
 app.listen({});
 
