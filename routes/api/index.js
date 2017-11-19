@@ -1,5 +1,5 @@
 'use strict';
-const 
+const booking = require('/controllers/booking.controller')
 
 module.exports = () => {
 
@@ -11,8 +11,7 @@ module.exports = () => {
     });
 
     router.get('/getHotels', (req, res, next) => {
-        //do Something here
-        res.json({status: 'success', message: 'Hello World'});
+        booking()
     });
 
 
