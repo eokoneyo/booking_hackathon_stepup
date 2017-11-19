@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const tests = require('models/tests.model')
 
 module.exports = {

@@ -1,4 +1,5 @@
 'use strict';
+const courses = require('../../app/controllers/courses.controller')
 
 const courses = require('../../app/controllers/courses.controller')
 
