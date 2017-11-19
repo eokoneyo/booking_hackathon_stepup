@@ -82,9 +82,9 @@ module.exports = {
             lang: 'en',
             name: 'Setup Up!',
             short_name: 'Step Up!',
-            description: '',
+            description: 'Learn skills to Improve your life.',
             icons: [{
-                src: path.resolve('assets/images/logo.png'),
+                src: path.resolve('assets/images/logo-red.svg'),
                 destination: path.join('images', 'manifest'),
                 sizes: [48, 72, 96, 128, 192, 256, 384, 512]
             }],

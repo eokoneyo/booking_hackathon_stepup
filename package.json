@@ -31,6 +31,8 @@
     "dustjs-helpers": "^1.7.3",
     "dustjs-linkedin": "^2.7.5",
     "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "imagemin": "^5.3.1",
