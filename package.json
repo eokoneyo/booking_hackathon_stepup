@@ -52,5 +52,8 @@
     "gulp-imagemin": "^4.0.0",
     "webpack": "^3.8.1",
     "mongoose": "^4.13.4"
+    "normalize-scss": "^7.0.0",
+    "request": "^2.83.0",
+    "webpack": "^3.8.1"
   }
 }
