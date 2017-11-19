@@ -3,7 +3,6 @@
 import rill from 'rill';
 import bodyParser from '@rill/body';
 import progress from '@rill/progress';
-import html from '@rill/html';
 import setDom from 'set-dom';
 import routeTransformer from 'libs/client/routeTransformer';
 
@@ -16,7 +15,6 @@ let app = rill();
 app = routeTransformer(app);
 
 //Initialize middlewares
-app.use(html());
 app.use(progress({ speed: 500, easing: 'ease' }));
 app.use(bodyParser());
 

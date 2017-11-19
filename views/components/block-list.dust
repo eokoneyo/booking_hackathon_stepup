@@ -1,0 +1,10 @@
+<a class="block-item" href="/course/1">
+    <div class="block-item__icon">
+        <span class="icon">{>"../public/images/icon.svg"/}</span>
+    </div>
+    <div class="block-item__content">
+        <span class="block-item__right-arrow">{>"../public/images/right.svg"/}</span>
+        <h3 class="block-item__heading">Learn how to start & manage a business</h3>
+        <p class="block-item__short-description">its a long established fact a reader will be distracted by the readable content of a page when looking at its layout</p>
+    </div>
+</a>

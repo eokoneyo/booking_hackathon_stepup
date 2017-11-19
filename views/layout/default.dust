@@ -19,6 +19,12 @@
                     d.body.appendChild(e);
                 })(window, document, 'script');
             }
+
+            navigator.serviceWorker.register('/sw.js').then(function () {
+                console.log('[serviceWorker] SW installed...');
+            }).catch(function(e) {
+               console.log('[serviceWorker] Error installing serviceWorker ' + e);
+            });
         </script>
     </body>
 </html>

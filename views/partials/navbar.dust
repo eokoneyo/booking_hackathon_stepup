@@ -1,7 +1,7 @@
 <header class="header">
     <section class="header-inner">
         <nav class="header__nav header__nav--left">
-            <span class="header__menu-item">some icon</span>
+            <a class="header__menu-item header__menu-item--link" href="/">{>"../public/images/logo_stepup.svg"/}</a>
         </nav>
 
         <nav class="header__nav header__nav--right">

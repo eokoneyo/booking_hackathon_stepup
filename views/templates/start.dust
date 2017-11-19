@@ -2,6 +2,14 @@
 {<body}
     {>"partials/navbar"/}
 
-    {>"partials/hero" title="Imagine your future!"
+    <div class="ns-course-grouping">
+        {>"partials/hero" title="Imagine your future!"
         tagline="what do you want to learn? what's your dream job?"/}
+
+        <section class="catalog-listing">
+            <h3 class="catalog-listing__heading">I want to...</h3>
+
+            {>"components/block-list" /}
+        </section>
+    </div>
 {/body}

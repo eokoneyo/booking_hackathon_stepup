@@ -12,5 +12,11 @@ module.exports = (router, renderer) => {
         renderer.render(res, 'templates/start');
     });
 
+
+    router.get('/course/1', (req, res, next) => {
+
+        renderer.render(res, 'templates/course');
+    });
+
     return router;
 };
