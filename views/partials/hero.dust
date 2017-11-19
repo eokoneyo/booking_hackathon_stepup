@@ -1,0 +1,7 @@
+<section class="hero">
+    <h3 class="hero__heading">{title} <span class="hero__heading--tagline">{tagline}</span></h3>
+    <p class="hero__content">{content|s}</p>
+    {?link}
+        <a class="button button--link" href="/start">{linkTitle}</a>
+    {/link}
+</section>

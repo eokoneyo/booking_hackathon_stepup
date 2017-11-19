@@ -1,5 +1,7 @@
 'use strict';
 
+global.__SERVER__ = true;
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cons = require('consolidate');

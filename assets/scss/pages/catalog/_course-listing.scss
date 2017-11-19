@@ -1,0 +1,22 @@
+
+
+.ns-course-listing{
+
+  .course-listing {
+
+    &__filter{
+      display: flex;
+      align-items: center;
+      justify-items: left;
+      height: 40px;
+      padding: 0 15px;
+
+      .icon{
+        width: 30px;
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+}

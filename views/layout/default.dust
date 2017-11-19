@@ -1,10 +1,30 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <div id="root">
             {+body/}
         </div>
+
+        <script>
+            if('serviceWorker' in navigator){
+                (function (w, d, s) {
+                    var e = d.createElement('script');
+                    e.type = 'text/javascript';
+                    e.async = true;
+                    e.src = '/js/app.bundle.js';
+                    d.body.appendChild(e);
+                })(window, document, 'script');
+            }
+
+            navigator.serviceWorker.register('/sw.js').then(function () {
+                console.log('[serviceWorker] SW installed...');
+            }).catch(function(e) {
+               console.log('[serviceWorker] Error installing serviceWorker ' + e);
+            });
+        </script>
     </body>
 </html>

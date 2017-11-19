@@ -1,0 +1,10 @@
+{>"layout/default" /}
+{<body}
+    {>"partials/navbar"/}
+
+    <section class="ns-course-listing">
+        <div class="course-listing__filter">
+            <span class="icon">{>"../public/images/filters.svg"/}</span> Filter Catalog
+        </div>
+    </section>
+{/body}

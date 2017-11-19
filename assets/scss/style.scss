@@ -1,8 +1,24 @@
 
 //Reset CSS
 @import "normalize";
+@include normalize();
+
+//Bourbon
+@import "bourbon";
 
 @import "settings";
 @import "global";
+
+
+//Components
+@import "components/navbar/main";
+@import "components/hero/main";
+@import "components/form/main";
+@import "components/block/main";
+
+
+//Pages
+@import "pages/home/main";
+@import "pages/catalog/main";
 
 
