@@ -24,8 +24,9 @@
     "dustjs-helpers": "^1.7.3",
     "dustjs-linkedin": "^2.7.5",
     "express": "^4.16.2",
+    "mongoose": "^4.13.4",
     "normalize-scss": "^7.0.0",
-    "webpack": "^3.8.1",
-    "mongoose": "^4.13.4"
+    "request": "^2.83.0",
+    "webpack": "^3.8.1"
   }
 }
