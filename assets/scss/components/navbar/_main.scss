@@ -1,0 +1,32 @@
+
+$className : header;
+$header-height: 40px;
+
+.#{$className} { }
+
+.#{$className}-inner{
+  display: flex;
+  justify-content: space-between;
+  height: $header-height;
+  background-color: $red;
+  padding: 10px 15px;
+
+  * {
+    color: $white;
+  }
+}
+
+.#{$className}__nav {
+  display: flex;
+  align-items: center;
+}
+
+.#{$className}__menu-item{
+  ~ #{&} {
+    padding-left: 5px;
+  }
+
+  &--link {
+    text-decoration: none;
+  }
+}

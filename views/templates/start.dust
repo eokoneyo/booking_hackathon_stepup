@@ -1,0 +1,7 @@
+{>"layout/default" /}
+{<body}
+    {>"partials/navbar"/}
+
+    {>"partials/hero" title="Imagine your future!"
+        tagline="what do you want to learn? what's your dream job?"/}
+{/body}

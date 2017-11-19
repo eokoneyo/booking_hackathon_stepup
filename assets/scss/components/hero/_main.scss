@@ -1,0 +1,35 @@
+
+.hero{
+  padding: 15px 15px 30px;
+  background-color: $red;
+
+  &__heading{
+    font-weight: $medium-weight;
+    font-size: 24px;
+    color: $white;
+
+    &:before{
+      content: '';
+      display: block;
+      margin-bottom: 5px;
+      height: 4px;
+      width: 40px;
+      background: $yellow;
+      border-radius: 5px;
+    }
+
+    &--tagline{
+      display: block;
+      color: $white;
+      padding-top: 10px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+
+  &__content{
+    color: $white;
+    font-weight: $medium-weight;
+    line-height: 1.4;
+  }
+}

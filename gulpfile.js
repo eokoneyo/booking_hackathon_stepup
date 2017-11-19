@@ -10,7 +10,8 @@ const dist = path.resolve('./public/');
 
 gulp.task('sass', function () {
     return gulp.src(`${src}/scss/**/*.scss`)
-        .pipe(sass({includePaths: ['./node_modules/normalize-scss/sass/']}).on('error', sass.logError))
+        .pipe(sass({includePaths: ['node_modules/normalize-scss/sass/', 'node_modules/bourbon/app/assets/stylesheets']})
+            .on('error', sass.logError))
         .pipe(gulp.dest(`${dist}/css`));
 });
 

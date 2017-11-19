@@ -1,0 +1,14 @@
+<header class="header">
+    <section class="header-inner">
+        <nav class="header__nav header__nav--left">
+            <span class="header__menu-item">some icon</span>
+        </nav>
+
+        <nav class="header__nav header__nav--right">
+            <div>
+                <a class="header__menu-item header__menu-item--link" href="/sign-in">sign in</a>
+                <span class="header__menu-item">&#9776;</span>
+            </div>
+        </nav>
+    </section>
+</header>
