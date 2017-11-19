@@ -49,6 +49,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "gulp-imagemin": "^4.0.0"
+    "gulp-imagemin": "^4.0.0",
+    "webpack": "^3.8.1",
+    "mongoose": "^4.13.4"
   }
 }
