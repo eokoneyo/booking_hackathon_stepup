@@ -22,7 +22,6 @@ gulp.task('sass', function () {
 
 
 gulp.task('imagemin', function () {
-
     return gulp.src('assets/images/**/*.{png,svg,ico,gif,jpg,webp}')
         .pipe(imageMin({
             progressive: true,
