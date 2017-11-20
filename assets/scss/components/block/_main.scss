@@ -1,0 +1,37 @@
+
+.block-item {
+  display: flex;
+  flex-flow: row;
+  border-top: 1px solid $light-grey;
+  text-decoration: none;
+
+  &__icon {
+    .icon {
+      display: flex;
+      margin-top: 16px;
+      margin-right: 10px;
+    }
+  }
+
+  &__heading{
+    font-weight: $bold-weight;
+    line-height: 1.2;
+    font-size: 16px;
+  }
+
+  &__content {
+    position: relative;
+    padding-right: 20px;
+  }
+
+  &__short-description {
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  &__right-arrow{
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+}

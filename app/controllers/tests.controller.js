@@ -16,7 +16,7 @@ let createTest = function (req, res) {
         res.status(400).json({
             "err": "Required ad object missing!"
         });
-        
+
         return;
     }
 
@@ -24,12 +24,12 @@ let createTest = function (req, res) {
 
     tests.save(function (err) {
 
-        if (err) 
+        if (err)
         {
             console.log(err);
             res.status(500).json({ "error": err });
         }
-        else 
+        else
         {
             res.status(200).json({
                 "message": "Test created"
@@ -37,7 +37,7 @@ let createTest = function (req, res) {
         }
 
     });
-  
+
 };
 
 let readTests = function (req, res) {
@@ -45,16 +45,16 @@ let readTests = function (req, res) {
         .find()
         .exec(function (err, test) {
 
-            if (err) 
+            if (err)
             {
                 console.log(err);
                 res.status(500).json({ "error": err });
             }
-            else 
+            else
             {
                 res.status(200).json(test);
             }
-            
+
         });
 };
 
@@ -63,12 +63,12 @@ let readTest = function (req, res) {
         .findOne({ _id: req.body.id })
         .exec(function (err, test) {
 
-            if (err) 
+            if (err)
             {
                 console.log(err);
                 res.status(500).json({ "error": err });
             }
-            else 
+            else
             {
                 res.status(200).json(test);
             }

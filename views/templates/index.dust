@@ -1,4 +1,17 @@
 {>"layout/default" /}
 {<body}
-    <h1>Hello</h1>
+
+    {>"partials/navbar"/}
+
+    <div class="ns-home">
+        {>"partials/hero" title="Step Up!"
+            tagline="Learn valuable skills to improve your life"
+            content="learn how to start and run a small business. Learn something, and something else to better your life."
+            link="/start"
+            linkTitle="start learning for free" /}
+
+        <section class="intro">
+            <h5>Learn any skill for free</h5>
+        </section>
+    </div>
 {/body}

@@ -1,0 +1,21 @@
+
+.button {
+
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: $white;
+  border: 0;
+  border-radius: 2px;
+
+  &--inline {
+    width: auto
+  }
+
+  &--link {
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+  }
+
+}
