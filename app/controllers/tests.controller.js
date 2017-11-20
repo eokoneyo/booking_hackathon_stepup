@@ -1,4 +1,4 @@
-const tests = require('models/tests.model')
+const tests = require('../models/tests.model')
 
 module.exports = {
     createTest,

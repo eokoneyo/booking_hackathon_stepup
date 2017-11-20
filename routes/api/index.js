@@ -1,7 +1,6 @@
 'use strict';
 const courses = require('../../app/controllers/courses.controller')
-
-const courses = require('../../app/controllers/courses.controller')
+const booking = require('../../app/controllers/booking.controller')
 
 module.exports = () => {
 
@@ -11,11 +10,10 @@ module.exports = () => {
       .get(courses.listCourses)
       .post(courses.createCourse);
 
-    router.get('/getHotels', (req, res, next) => {
-        //do Something here
-        res.json({status: 'success', message: 'Hello World'});
-    });
-
+    router.get('/getHotels', booking.getHotels);
+    
+    router.get('/getHotelReviews', booking.getHotelReviews);
+    
     router.route('/courses/:courseId')
       .get(courses.getCourse)
       .put(courses.updateCourse)
