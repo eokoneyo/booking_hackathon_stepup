@@ -18,9 +18,6 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(`${dist}/css`));
 });
 
-
-
-
 gulp.task('imagemin', function () {
     return gulp.src('assets/images/**/*.{png,svg,ico,gif,jpg,webp}')
         .pipe(imageMin({
@@ -45,7 +42,16 @@ gulp.task('imagemin:watch', function () {
     gulp.watch(`${src}/images/*`, ['imagemin'])
 });
 
+gulp.task('default', gulp.parallel(
+    gulp.task('sass'),
+    gulp.task('imagemin'),
+    gulp.task('sw-toolbox')
+));
 
-gulp.task('default', ['sass','imagemin', 'sw-toolbox']);
+gulp.task('dev', gulp.parallel(
+    gulp.task('sass:watch'),
+    gulp.task('imagemin:watch')
+));
 
-gulp.task('dev', ['sass:watch', 'imagemin:watch']);
+exports.dev = gulp.task('dev');
+exports.default = gulp.task('default');

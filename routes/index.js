@@ -12,5 +12,4 @@ module.exports = (app) => {
 
     app.use('/api', api);
     app.use('/', frontendRoutes)
-
 };
