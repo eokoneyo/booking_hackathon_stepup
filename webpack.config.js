@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
-const DIST_DIR = 'public'
+const DIST_DIR = 'public';
 
 module.exports = {
     entry: {
@@ -15,8 +15,8 @@ module.exports = {
     resolve: {
         modules: ['node_modules', path.resolve('.')],
         alias: {
-            //We need to use dust-helpers in for client side rendering
-            //use an alias to tell webpack how to resolve dust.core expectation
+            //We need to use dust-helpers for client side rendering
+            //so use an alias to tell webpack how to resolve dust.core expectation
             'dust.core': 'dustjs-linkedin',
         }
     },
@@ -42,7 +42,6 @@ module.exports = {
     },
 
     plugins: [
-
         //Teach Webpack about magic globals
         new webpack.DefinePlugin({
             __SERVER__: 'false',

@@ -1,6 +1,5 @@
 'use strict';
-const courses = require('../../app/controllers/courses.controller')
-const booking = require('../../app/controllers/booking.controller')
+const courses = require('../../app/controllers/courses.controller');
 
 module.exports = () => {
 
@@ -9,10 +8,6 @@ module.exports = () => {
     router.route('/courses')
       .get(courses.listCourses)
       .post(courses.createCourse);
-
-    router.get('/getHotels', booking.getHotels);
-    
-    router.get('/getHotelReviews', booking.getHotelReviews);
     
     router.route('/courses/:courseId')
       .get(courses.getCourse)
@@ -20,5 +15,4 @@ module.exports = () => {
       .delete(courses.deleteCourse);
 
     return router;
-
 };
