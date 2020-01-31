@@ -20,9 +20,7 @@ app.use(express.static('./public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 
-mongoose.connect('mongodb://localhost:27017/step_up', {
-  useMongoClient: true
-});
+mongoose.connect('mongodb://localhost:27017/step_up');
 
 require('routes/')(app);
 
