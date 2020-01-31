@@ -41,7 +41,7 @@
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-pngquant": "^7.0.0",
     "imagemin-svgo": "^6.0.0",
-    "mongoose": "^5.6.4",
+    "mongoose": "^5.8.10",
     "normalize-scss": "^7.0.0",
     "request": "^2.88.0",
     "rill": "^7.0.0",
